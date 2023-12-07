@@ -35,11 +35,13 @@ a.icon-link:hover {
   position: fixed;
   top: 0;
   left: 0;
+  background-color: white;
 }
 
 .nav-title-link {
   color: black;
   text-decoration: none;
+
 }
 
 .nav-title-link:hover {
