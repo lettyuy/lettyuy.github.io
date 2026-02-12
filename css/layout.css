@@ -12,11 +12,11 @@ body {
   color: #111111;
 }
 
-/* Make sure basic text isn't super airy (tighten) */
-p {
-  margin: 0;                 /* remove default big paragraph margins */
-  line-height: 1.5;          /* tighter text */
-}
+/* IMPORTANT:
+   Removing the global paragraph margin reset so <p> blocks can breathe.
+   Control spacing via .body-text in typography.css instead. */
+/* p { margin: 0; line-height: 1.5; } */
+
 
 /* ---------- NAVBAR ---------- */
 .navbar {
@@ -31,7 +31,7 @@ p {
 .nav-container {
   max-width: 1100px;
   margin: 0 auto;
-  padding: 18px 24px;        /* slightly tighter */
+  padding: 18px 24px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -45,12 +45,19 @@ p {
 
 /* ---------- MAIN CONTENT ---------- */
 #main-content {
-  max-width: 900px;
-  margin: 0 auto 80px auto;
-  padding: 90px 24px 0 24px; /* pulls content up */
+  max-width: 1100px;            /* wider for modern screens */
+  margin: 0 auto 90px auto;
+  padding: 96px 24px 0 24px;    /* accounts for fixed navbar */
   display: flex;
   flex-direction: column;
-  gap: 56px;                 /* tighter section spacing */
+  gap: 64px;                    /* comfortable section rhythm */
+}
+
+/* Optional: constrain “reading width” without shrinking the whole page */
+.circle-ai-content,
+.about-content,
+.hero-subtext {
+  max-width: 78ch;
 }
 
 /* ---------- HERO ---------- */
@@ -62,35 +69,27 @@ p {
 .hero-text {
   display: flex;
   flex-direction: column;
-  gap: 14px;                 /* tighter hero rhythm */
+  gap: 16px;
 }
 
-/* If typography.css is taking over, these still give you structure */
 .main-title {
   margin: 0;
-  line-height: 1.1;          /* tighter headline */
 }
 
-.hero-subtext {
-  max-width: 680px;
-  line-height: 1.5;
-  margin-top: 2px;
-}
-
-/* ---------- ABOUT ---------- */
+/* ---------- ABOUT / SECTIONS ---------- */
 #about-section {
   display: flex;
   flex-direction: column;
-  gap: 14px;                 /* tighter heading spacing */
+  gap: 16px;
 }
 
 .about-content {
   display: flex;
   flex-direction: column;
-  gap: 14px;                 /* tighter paragraph spacing */
-  max-width: 760px;
+  gap: 18px;
 }
 
+/* Small title row button */
 .title-row{
   display:flex;
   align-items:center;
@@ -98,17 +97,15 @@ p {
   flex-wrap:wrap;
 }
 
-.title-row h1{
-  margin:0;
-}
+.title-row h1{ margin:0; }
 
 .cta-small{
-  font-size:9px;
-  padding:2px 5px;
+  font-size: 12px;
+  padding: 6px 10px;
   border-radius:999px;
   border:2px solid #111;
   text-decoration:none;
-  font-weight:600;
+  font-weight:700;
   color:#111;
   transition:all .2s ease;
 }
@@ -118,6 +115,12 @@ p {
   color:#fff;
 }
 
+/* ---------- SECTION DIVIDER ---------- */
+.section-divider {
+  height: 1px;
+  background: rgba(0,0,0,0.06);
+  margin: 56px 0;
+}
 
 /* ---------- FOOTER ---------- */
 .footer {
@@ -135,34 +138,52 @@ p {
   color: #111111;
 }
 
-/* ---------- IMAGES ---------- */
-
+/* ---------- IMAGES (STANDARDIZED) ---------- */
+/* Product UI screenshots */
 .circle-ai-image {
   width: 100%;
-  max-width: 420px;
+  max-width: 720px;             /* bigger so it matches text width */
+  height: auto;
   border-radius: 14px;
   box-shadow: 0 10px 30px rgba(0,0,0,0.08);
   display: block;
-  margin: 40px auto;
+  margin: 44px auto;
 }
 
+/* n8n workflow / wide diagrams */
 .n8n-image {
   width: 100%;
-  max-width: 800px;
-  border-radius: 14px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+  max-width: 1040px;            /* wider for diagrams */
+  height: auto;
+  border-radius: 18px;
+  box-shadow: 0 18px 50px rgba(0,0,0,0.12);
   display: block;
-  margin: 40px auto;
+  margin: 56px auto;
 }
 
 /* ---------- RESPONSIVE ---------- */
+@media (max-width: 1024px) {
+  #main-content {
+    padding: 92px 20px 0 20px;
+    gap: 56px;
+  }
+
+  .circle-ai-image { max-width: 680px; }
+  .n8n-image { max-width: 920px; }
+}
+
 @media (max-width: 768px) {
   #main-content {
-    padding: 80px 18px 0 18px;
+    padding: 84px 18px 0 18px;
     gap: 44px;
   }
 
   .nav-container {
     padding: 16px 18px;
+  }
+
+  .circle-ai-image,
+  .n8n-image {
+    margin: 32px auto;
   }
 }
