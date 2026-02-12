@@ -109,7 +109,7 @@ p {
 }
 
 .cta-small{
-  font-size:8px;
+  font-size:9px;
   padding:2px 5px;
   border-radius:999px;
   border:2px solid #111;
@@ -150,6 +150,7 @@ p {
   box-shadow: 0 10px 30px rgba(0,0,0,0.08);
   display: block;
   margin: 40px auto;
+  align-items:left;
 }
 
 /* ---------- RESPONSIVE ---------- */
