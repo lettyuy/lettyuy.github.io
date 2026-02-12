@@ -42,7 +42,7 @@ body {
 
 #main-content {
   max-width: 900px;
-  margin: 180px auto 120px auto;
+  margin: 100px auto 120px auto;
   padding: 0 24px;
   display: flex;
   flex-direction: column;
