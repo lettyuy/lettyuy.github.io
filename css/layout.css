@@ -34,7 +34,7 @@ body {
 #portfolio-header {
   display: flex;
   gap: 20px;
-  align-items: center;
+  align-items: left;
 }
 
 #portfolio-header-image-container {
