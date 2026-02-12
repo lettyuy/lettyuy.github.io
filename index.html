@@ -1,186 +1,183 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
-
-    <!-- 
-      TODO
-
-      Upload your Unemployable (or whatever photo you like) to the assets/images folder
-      and change the name of the image below to match the uploaded one
-
-      Change the title in the <title> tag to whatever you would like the title of your portfolio to be
-
-      This should be the same across all pages.
-     -->
-		<title>Letty Uy's Portfolio</title>
-    <meta name="description" content="Letty Uy's Portfolio">
+  <head>
+    <meta charset="utf-8" />
+    <title>Letty Uy's Portfolio</title>
+    <meta name="description" content="Letty Uy's Portfolio" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-		<link rel="stylesheet" href="./css/layout.css">
-    <link rel="stylesheet" href="./css/typography.css">
-    <link rel="stylesheet" href="./css/utilities.css">
+    <link rel="stylesheet" href="./css/layout.css" />
+    <link rel="stylesheet" href="./css/typography.css" />
+    <link rel="stylesheet" href="./css/utilities.css" />
 
-		<script defer src="./js/script.js"></script>
-	</head>
-	<body>
+    <script defer src="./js/script.js"></script>
+  </head>
+
+  <body>
     <!-- NAVBAR -->
     <div class="navbar">
       <a class="nav-title-link" href="lettyuy.github.io">
-        <!-- TODO - Change the "Portfolio Title" to whatever you want displayed in the top left -->
         <span class="nav-title">Letty Uy's Portfolio</span>
-         <!-- TODO - Change the email after 'mailto:' to your email address for contact -->
-        <a class="button" href="mailto:lettefuy@gmail.com">
-          <span class="button-text">Contact Me</span>
-        </a>
+      </a>
+
+      <a class="button" href="mailto:lettefuy@gmail.com">
+        <span class="button-text">Contact Me</span>
       </a>
     </div>
 
     <!-- MAIN PAGE CONTENT -->
-    <div id="main-content">
-
+    <main id="main-content">
       <!-- PORTFOLIO HEADER -->
-      <div id="portfolio-header">
+      <section id="portfolio-header">
         <div id="portfolio-header-image-container">
-          <!-- 
-            TODO
-
-            - Change the img "src" attribute to point to the Unemployable image you uploaded (or whatever image).
-            - Change the number to point to your Unemployable & replace the OpenSea link with your own
-            - If you aren't using an Unemployable as your image, remove the entire "a" element
+          <!-- If you want an image here later, drop it in like:
+          <img src="./assets/images/YOUR_IMAGE.jpg" class="portfolio-header-image" alt="Portrait" />
           -->
-          <a class="no-underline" target="_blank">
+        </div>
+
+        <div id="portfolio-header-text-container">
+          <div class="header-text">
+            <span class="main-title">Hey, I'm Letty.</span>
+            <div class="body-text">
+              I'm a consultant/data analyst/wearer-of-many-hats based in NYC.
+            </div>
+          </div>
+
+          <a class="button" id="my-work-link" href="#my-work-section">
+            <span class="button-text">Check out my projects</span>
+            <img
+              src="./assets/icons/arrow-right.svg"
+              class="right-arrow-icon"
+              alt=""
+            />
           </a>
         </div>
-
-          <!-- 
-            TODO
-
-            - Change the main-title to whatver you want
-            - Change the body-text after that to a quick introduction to what you do
-            - Edit the button text if you feel like it. It will link to the projects section below.
-          -->
-        <div id="portfolio-header-text-container">
-            <div class="header-text">
-              <span class="main-title">Hey, I'm Letty.</span>
-              <div class="body-text">I'm a consultant/data analyst/wearer-of-many-hats based in NYC.</div>
-            </div>
-            <a class="button" id="my-work-link">
-              <span class="button-text">Check out my projects</span> 
-              <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon"/>
-            </a>
-        </div>
-      </div>
+      </section>
 
       <!-- ABOUT SECTION -->
-      <!-- 
-        TODO
-
-        - Change the subheader-text to whatever header you want
-        - Add paragraphs using the <div class="body-text"></div> elements in the "about-section-content"
-      -->
-      <div id="about-section">
+      <section id="about-section">
         <span class="subheader-text">My Background / About Me</span>
-        <div class="about-section-content">
-          <div class="body-text">I began my career studying apparel and graphic design, where I learned to think visually, build with intention, and design around the end user. I went on to spend over six years in fashion design and product development, bringing concepts to life and working across the full lifecycle from ideation to launch.</div>
-<div class="body-text">During that time, I became increasingly curious about the data behind product decisions — especially the voice of the customer. I found myself drawn to social listening, customer reviews, and trend signals: What were customers actually saying? What patterns were emerging beneath the surface? How could we use those insights to build better products?</div>
-<div class="body-text">That curiosity led me to pursue a master’s degree in Business Analytics and transition into consulting. Today, I work with a Fortune 1 client focusing on trend intelligence, analyzing large-scale data to surface emerging themes, consumer sentiment, and strategic opportunities.</div>
-<div class="body-text">What I enjoy most is ideating solutions — whether that’s shaping product concepts, building insight tools, or refining systems that make decisions easier and more informed. I’m motivated by solving real problems, improving user experiences, and creating work that is both functional and well-designed.</div>
-<div class="body-text">My background allows me to bridge creativity and analytics: I bring a designer’s empathy, a product developer’s execution mindset, and a data-driven approach to iteration and strategy.
-</div> 
-    </div>
 
-      <!-- PROJECTS / MY WORK SECTION -->
-      <div id="my-work-section">
-        <!-- TODO - Change the subheader-text to whatever you want the Projects section header to say -->
+        <div class="about-section-content">
+          <div class="body-text">
+            I began my career studying apparel and graphic design, where I learned
+            to think visually, build with intention, and design around the end
+            user. I went on to spend over six years in fashion design and product
+            development, bringing concepts to life and working across the full
+            lifecycle from ideation to launch.
+          </div>
+
+          <div class="body-text">
+            During that time, I became increasingly curious about the data behind
+            product decisions — especially the voice of the customer. I found
+            myself drawn to social listening, customer reviews, and trend signals:
+            What were customers actually saying? What patterns were emerging
+            beneath the surface? How could we use those insights to build better
+            products?
+          </div>
+
+          <div class="body-text">
+            That curiosity led me to pursue a master’s degree in Business Analytics
+            and transition into consulting. Today, I work with a Fortune 1 client
+            focusing on trend intelligence, analyzing large-scale data to surface
+            emerging themes, consumer sentiment, and strategic opportunities.
+          </div>
+
+          <div class="body-text">
+            What I enjoy most is ideating solutions — whether that’s shaping
+            product concepts, building insight tools, or refining systems that
+            make decisions easier and more informed. I’m motivated by solving
+            real problems, improving user experiences, and creating work that is
+            both functional and well-designed.
+          </div>
+
+          <div class="body-text">
+            My background allows me to bridge creativity and analytics: I bring a
+            designer’s empathy, a product developer’s execution mindset, and a
+            data-driven approach to iteration and strategy.
+          </div>
+        </div>
+      </section>
+
+      <!-- PROJECTS -->
+      <section id="my-work-section">
         <span class="subheader-text">My Projects</span>
 
         <div class="projects-container">
-          <!-- 
-            TODO
-
-            This is where the project cards live. Here's a base level project card for you to copy:
-            <div class="project-card">
-              <img src="./assets/images/IMAGE_NAME" class="project-image">
-              <div class="project-card-text-container">
-                <div class="subheader-text project-title">PROJECT_NAME</div>
-                <div class="body-text project-card-text">SMALL_PROJECT_DESCRIPTION</div>
-              </div>
-              <a class="button" href="./project-pages/PROJECT_PAGE_NAME.html">
-                <span class="button-text">Read More</span>
-                <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon"/>
-              </a>
-            </div>
-
-            - To add a project to the this area, copy the above, paste it below this comment, and change the following:
-                - IMAGE_NAME: the name of the image file in assets/images
-                - PROJECT_NAME: the name of the project (keep it short, it only shows 1 line)
-                - SMALL_PROJECT_DESCRIPTION: a quick project description (max 4 lines)
-                - PROJECT_PAGE_NAME.html: the html filename for the project (must be in project-pages folder)
-          -->
           <div class="project-card">
-            <img src="./assets/images/wearable.jpg" class="project-image">
+            <img
+              src="./assets/images/wearable.jpg"
+              class="project-image"
+              alt="Bellabeat Case Study"
+            />
             <div class="project-card-text-container">
               <div class="subheader-text project-title">Bellabeat Case Study</div>
-              <div class="body-text project-card-text">Using R, I completed a case study as part of my Google Data Analytics Certificate.</div>
+              <div class="body-text project-card-text">
+                Using R, I completed a case study as part of my Google Data Analytics Certificate.
+              </div>
             </div>
             <a class="button" href="./project-pages/bellabeat_analysis.html">
               <span class="button-text">Read More</span>
-              <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon"/>
+              <img
+                src="./assets/icons/arrow-right.svg"
+                class="right-arrow-icon"
+                alt=""
+              />
             </a>
           </div>
+
           <div class="project-card">
-            <img src="./assets/images/school_map.png" class="project-image">
+            <img
+              src="./assets/images/school_map.png"
+              class="project-image"
+              alt="World Slider Map"
+            />
             <div class="project-card-text-container">
               <div class="subheader-text project-title">World Slider Map</div>
-              <div class="body-text project-card-text">Using R, I created a slider map to show average schooling years by country and year.</div>
+              <div class="body-text project-card-text">
+                Using R, I created a slider map to show average schooling years by country and year.
+              </div>
             </div>
             <a class="button" href="./project-pages/school_map.html">
               <span class="button-text">Read More</span>
-              <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon"/>
+              <img
+                src="./assets/icons/arrow-right.svg"
+                class="right-arrow-icon"
+                alt=""
+              />
             </a>
           </div>
+
           <div class="project-card">
-            <img src="./assets/images/billboard_h100.png" class="project-image">
+            <img
+              src="./assets/images/billboard_h100.png"
+              class="project-image"
+              alt="Billboard's #1 Songs"
+            />
             <div class="project-card-text-container">
               <div class="subheader-text project-title">Billboard's #1 Songs</div>
-              <div class="body-text project-card-text">Using Python, I made a quadrant scatter plot that visualized and categorized Billboard's Hot 100 #1 songs.</div>
+              <div class="body-text project-card-text">
+                Using Python, I made a quadrant scatter plot that visualized and categorized Billboard's Hot 100 #1 songs.
+              </div>
             </div>
             <a class="button" href="./project-pages/cis_9655_billboard_quadrant_v03.html">
               <span class="button-text">Read More</span>
-              <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon"/>
+              <img
+                src="./assets/icons/arrow-right.svg"
+                class="right-arrow-icon"
+                alt=""
+              />
             </a>
           </div>
         </div>
-      </div>
-    </div>
+      </section>
+    </main>
 
     <!-- FOOTER -->
-    <div id="footer">
-      <!-- 
-        TODO - Change href to your Instagram account (can also delete entire "a" element if no Instagram) 
-
-        This should be the same across all pages.
-      -->
-      <!-- 
-        TODO - Change href to your Twitter account (can also delete entire "a" element if no Twitter) 
-      
-        This should be the same across all pages.
-      -->
-
-      <!-- 
-        TODO - Change the email after "mailto" to your contact email 
-      
-        This should be the same across all pages.
-      -->
+    <footer id="footer">
       <a class="icon-link" href="mailto:lettefuy@gmail.com">
-        <image src="./assets/icons/mail.svg" class="footer-icon"/>
+        <img src="./assets/icons/mail.svg" class="footer-icon" alt="Email" />
       </a>
-    </div>
-
-	</body>
-</html>
-
-
-	</body>
+    </footer>
+  </body>
 </html>
