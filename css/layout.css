@@ -12,6 +12,12 @@ body {
   color: #111111;
 }
 
+/* Paragraph spacing */
+p {
+  margin-top: 0;
+  margin-bottom: 16px; /* adjust between 16–22px to taste */
+}
+
 /* IMPORTANT:
    Removing the global paragraph margin reset so <p> blocks can breathe.
    Control spacing via .body-text in typography.css instead. */
