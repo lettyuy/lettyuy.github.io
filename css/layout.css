@@ -19,8 +19,9 @@ p {
 }
 
 /* If your typography.css sets these, this will still work unless it uses !important */
-.body-text {
-  line-height: 1.5;
+.body-text{
+  line-height: 1.7;
+  margin-bottom: 18px;
 }
 
 /* ---------- NAVBAR ---------- */
@@ -96,42 +97,33 @@ p {
   max-width: 760px;
 }
 
-/* ---------- DEMO EMBED ---------- */
-
-#demo-section {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
+.title-row{
+  display:flex;
+  align-items:center;
+  gap:14px;
+  flex-wrap:wrap;
 }
 
-.demo-header {
-  display: flex;
-  flex-direction: column;
-  gap: 6px;
-  max-width: 760px;
+.title-row h1{
+  margin:0;
 }
 
-.demo-subtext {
-  opacity: 0.9;
+.cta-small{
+  font-size:12px;
+  padding:6px 12px;
+  border-radius:999px;
+  border:2px solid #111;
+  text-decoration:none;
+  font-weight:600;
+  color:#111;
+  transition:all .2s ease;
 }
 
-.demo-frame {
-  border: 1px solid #f0f0f0;
-  border-radius: 14px;
-  overflow: hidden;
-  background: #fff;
+.cta-small:hover{
+  background:#111;
+  color:#fff;
 }
 
-.demo-frame iframe {
-  width: 100%;
-  height: 560px;   /* adjust if you want taller/shorter */
-  border: 0;
-  display: block;
-}
-
-.demo-actions {
-  margin-top: 6px;
-}
 
 /* ---------- FOOTER ---------- */
 .footer {
