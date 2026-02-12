@@ -202,32 +202,3 @@ body {
     max-width: 100%;
   }
 }
-
-/* --- Fix: keep content centered + prevent huge side margins --- */
-#main-content{
-  max-width: 1100px;
-  margin: 140px auto;      /* centers the whole page */
-  padding: 0 24px;         /* keeps it nice on smaller screens */
-  display: flex;
-  flex-direction: column;
-  gap: 69px;
-}
-
-/* --- Fix: if there's no header image, don't reserve 50% space --- */
-#portfolio-header-image-container:empty{
-  display: none;
-}
-
-/* When the image container is gone, let the text take full width */
-#portfolio-header-text-container{
-  flex-basis: 100%;
-  width: 100%;
-}
-
-/* Keep the header left-aligned (less "floating") */
-#portfolio-header{
-  align-items: flex-start;
-  justify-content: flex-start;
-}
-
-
