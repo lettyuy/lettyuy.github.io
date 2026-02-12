@@ -96,40 +96,25 @@ p {
   max-width: 760px;
 }
 
-/* ---------- DEMO EMBED ---------- */
+/* ---------- CIRCLE AI SECTION ---------- */
 
-#demo-section {
+#circle-ai-section {
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 18px;
 }
 
-.demo-header {
+.circle-ai-content {
   display: flex;
   flex-direction: column;
-  gap: 6px;
+  gap: 18px;
   max-width: 760px;
 }
 
-.demo-subtext {
-  opacity: 0.9;
-}
-
-.demo-frame {
-  border: 1px solid #f0f0f0;
-  border-radius: 14px;
-  overflow: hidden;
-  background: #fff;
-}
-
-.demo-frame iframe {
+.circle-ai-image {
   width: 100%;
-  height: 560px;   /* adjust if you want taller/shorter */
-  border: 0;
-  display: block;
-}
-
-.demo-actions {
+  border-radius: 12px;
+  border: 1px solid #f0f0f0;
   margin-top: 6px;
 }
 
