@@ -57,7 +57,10 @@ body {
 .circle-ai-content,
 .about-content,
 .hero-subtext {
-  max-width: 78ch;
+  max-width: 800px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* ---------- HERO ---------- */
@@ -142,7 +145,7 @@ body {
 /* Product UI screenshots */
 .circle-ai-image {
   width: 100%;
-  max-width: 720px;             /* bigger so it matches text width */
+  max-width: 800px;             /* bigger so it matches text width */
   height: auto;
   border-radius: 14px;
   box-shadow: 0 10px 30px rgba(0,0,0,0.08);
@@ -153,7 +156,7 @@ body {
 /* n8n workflow / wide diagrams */
 .n8n-image {
   width: 100%;
-  max-width: 1040px;            /* wider for diagrams */
+  max-width: 900px;            /* wider for diagrams */
   height: auto;
   border-radius: 18px;
   box-shadow: 0 18px 50px rgba(0,0,0,0.12);
