@@ -53,9 +53,9 @@ body {
   display: flex;
   gap: 34px;
   flex-direction: column; /* Stack children vertically */
-  justify-content: center; /* Center children vertically */
-  align-items: center; /* Center children horizontally */
-  text-align: center; /* Ensure text within children is centered */
+  justify-content: left; /* Center children vertically */
+  align-items: left; /* Center children horizontally */
+  text-align: left; /* Ensure text within children is centered */
   height: 100%; /* Full height of the container (adjust as needed) */
 }
 
