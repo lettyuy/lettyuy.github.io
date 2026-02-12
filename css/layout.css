@@ -143,11 +143,12 @@ p {
 
 /* ---------- IMAGES ---------- */
 
-.card img {
+.circle-ai-image {
   width: 100%;
-  height: 160px;        /* choose your fixed height */
-  object-fit: cover;    /* crops instead of stretching */
+  max-width: 650px;   /* controls how large it can get */
+  height: auto;
   display: block;
+  margin: 24px 0;
 }
 
 
