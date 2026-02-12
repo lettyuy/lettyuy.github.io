@@ -2,182 +2,91 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>Letty Uy's Portfolio</title>
+    <title>Letty Uy | Portfolio</title>
     <meta name="description" content="Letty Uy's Portfolio" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <link rel="stylesheet" href="./css/layout.css" />
     <link rel="stylesheet" href="./css/typography.css" />
     <link rel="stylesheet" href="./css/utilities.css" />
-
-    <script defer src="./js/script.js"></script>
   </head>
 
   <body>
+
     <!-- NAVBAR -->
-    <div class="navbar">
-      <a class="nav-title-link" href="lettyuy.github.io">
-        <span class="nav-title">Letty Uy's Portfolio</span>
-      </a>
+    <nav class="navbar">
+      <div class="nav-container">
+        <a class="nav-title" href="#">Letty Uy’s Portfolio</a>
 
-      <a class="button" href="mailto:lettefuy@gmail.com">
-        <span class="button-text">Contact Me</span>
-      </a>
-    </div>
+        <a class="button" href="mailto:lettefuy@gmail.com">
+          <span class="button-text">Contact Me</span>
+        </a>
+      </div>
+    </nav>
 
-    <!-- MAIN PAGE CONTENT -->
+    <!-- MAIN CONTENT -->
     <main id="main-content">
-      <!-- PORTFOLIO HEADER -->
-      <section id="portfolio-header">
-        <div id="portfolio-header-image-container">
-          <!-- If you want an image here later, drop it in like:
-          <img src="./assets/images/YOUR_IMAGE.jpg" class="portfolio-header-image" alt="Portrait" />
-          -->
-        </div>
 
-        <div id="portfolio-header-text-container">
-          <div class="header-text">
-            <span class="main-title">Hey, I'm Letty.</span>
-            <div class="body-text">
-              I'm a consultant/data analyst/wearer-of-many-hats based in NYC.
-            </div>
-          </div>
+      <!-- HERO SECTION -->
+      <section id="hero-section">
+        <div class="hero-text">
+          <h1 class="main-title">Hey, I’m Letty.</h1>
 
-          <a class="button" id="my-work-link" href="#my-work-section">
-            <span class="button-text">Check out my projects</span>
-            <img
-              src="./assets/icons/arrow-right.svg"
-              class="right-arrow-icon"
-              alt=""
-            />
+          <p class="body-text hero-subtext">
+            I’m a consultant, data analyst, and product-minded problem solver
+            based in NYC.
+          </p>
+
+          <a class="button" href="#about-section">
+            <span class="button-text">Learn more</span>
           </a>
         </div>
       </section>
 
       <!-- ABOUT SECTION -->
       <section id="about-section">
-        <span class="subheader-text">My Background / About Me</span>
+        <h2 class="subheader-text">My Background</h2>
 
-        <div class="about-section-content">
-          <div class="body-text">
+        <div class="about-content">
+
+          <p class="body-text">
             I began my career studying apparel and graphic design, where I learned
-            to think visually, build with intention, and design around the end
-            user. I went on to spend over six years in fashion design and product
-            development, bringing concepts to life and working across the full
-            lifecycle from ideation to launch.
-          </div>
+            to think visually, build with intention, and design around the end user.
+            I spent over six years in fashion design and product development,
+            bringing concepts to life from ideation to launch.
+          </p>
 
-          <div class="body-text">
-            During that time, I became increasingly curious about the data behind
-            product decisions — especially the voice of the customer. I found
-            myself drawn to social listening, customer reviews, and trend signals:
-            What were customers actually saying? What patterns were emerging
-            beneath the surface? How could we use those insights to build better
-            products?
-          </div>
+          <p class="body-text">
+            Over time, I became increasingly curious about the data behind product
+            decisions — especially the voice of the customer. I found myself drawn
+            to social listening, pattern recognition, and the signals beneath the surface.
+          </p>
 
-          <div class="body-text">
+          <p class="body-text">
             That curiosity led me to pursue a master’s degree in Business Analytics
             and transition into consulting. Today, I work with a Fortune 1 client
-            focusing on trend intelligence, analyzing large-scale data to surface
-            emerging themes, consumer sentiment, and strategic opportunities.
-          </div>
+            focusing on trend intelligence and insight-driven strategy.
+          </p>
 
-          <div class="body-text">
-            What I enjoy most is ideating solutions — whether that’s shaping
-            product concepts, building insight tools, or refining systems that
-            make decisions easier and more informed. I’m motivated by solving
-            real problems, improving user experiences, and creating work that is
-            both functional and well-designed.
-          </div>
+          <p class="body-text">
+            I enjoy building tools, refining systems, and designing workflows that
+            make decision-making clearer and more effective — blending creative thinking
+            with analytical rigor.
+          </p>
 
-          <div class="body-text">
-            My background allows me to bridge creativity and analytics: I bring a
-            designer’s empathy, a product developer’s execution mindset, and a
-            data-driven approach to iteration and strategy.
-          </div>
         </div>
       </section>
 
-      <!-- PROJECTS -->
-      <section id="my-work-section">
-        <span class="subheader-text">My Projects</span>
-
-        <div class="projects-container">
-          <div class="project-card">
-            <img
-              src="./assets/images/wearable.jpg"
-              class="project-image"
-              alt="Bellabeat Case Study"
-            />
-            <div class="project-card-text-container">
-              <div class="subheader-text project-title">Bellabeat Case Study</div>
-              <div class="body-text project-card-text">
-                Using R, I completed a case study as part of my Google Data Analytics Certificate.
-              </div>
-            </div>
-            <a class="button" href="./project-pages/bellabeat_analysis.html">
-              <span class="button-text">Read More</span>
-              <img
-                src="./assets/icons/arrow-right.svg"
-                class="right-arrow-icon"
-                alt=""
-              />
-            </a>
-          </div>
-
-          <div class="project-card">
-            <img
-              src="./assets/images/school_map.png"
-              class="project-image"
-              alt="World Slider Map"
-            />
-            <div class="project-card-text-container">
-              <div class="subheader-text project-title">World Slider Map</div>
-              <div class="body-text project-card-text">
-                Using R, I created a slider map to show average schooling years by country and year.
-              </div>
-            </div>
-            <a class="button" href="./project-pages/school_map.html">
-              <span class="button-text">Read More</span>
-              <img
-                src="./assets/icons/arrow-right.svg"
-                class="right-arrow-icon"
-                alt=""
-              />
-            </a>
-          </div>
-
-          <div class="project-card">
-            <img
-              src="./assets/images/billboard_h100.png"
-              class="project-image"
-              alt="Billboard's #1 Songs"
-            />
-            <div class="project-card-text-container">
-              <div class="subheader-text project-title">Billboard's #1 Songs</div>
-              <div class="body-text project-card-text">
-                Using Python, I made a quadrant scatter plot that visualized and categorized Billboard's Hot 100 #1 songs.
-              </div>
-            </div>
-            <a class="button" href="./project-pages/cis_9655_billboard_quadrant_v03.html">
-              <span class="button-text">Read More</span>
-              <img
-                src="./assets/icons/arrow-right.svg"
-                class="right-arrow-icon"
-                alt=""
-              />
-            </a>
-          </div>
-        </div>
-      </section>
     </main>
 
     <!-- FOOTER -->
-    <footer id="footer">
-      <a class="icon-link" href="mailto:lettefuy@gmail.com">
-        <img src="./assets/icons/mail.svg" class="footer-icon" alt="Email" />
-      </a>
+    <footer class="footer">
+      <div class="footer-content">
+        <a href="mailto:lettefuy@gmail.com" class="footer-link">
+          lettefuy@gmail.com
+        </a>
+      </div>
     </footer>
+
   </body>
 </html>
