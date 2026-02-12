@@ -86,7 +86,6 @@ body {
 .about-content {
   display: flex;
   flex-direction: column;
-  gap: 18px;
 }
 
 /* Small title row button */
