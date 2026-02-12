@@ -13,7 +13,7 @@
 
       This should be the same across all pages.
      -->
-    <link rel="icon" href="./assets/images/lettypx.png" />
+    <link rel="icon" href="./assets/images/letty_pixel.png" />
 		<title>Letty Uy's Portfolio</title>
     <meta name="description" content="A portfolio template.">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -23,17 +23,13 @@
     <link rel="stylesheet" href="./css/utilities.css">
 
 		<script defer src="./js/script.js"></script>
-
-    <style>
-      @import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
-      </style>
 	</head>
 	<body>
     <!-- NAVBAR -->
     <div class="navbar">
-      <a class="nav-title-link" href="https://lettyuy.github.io/">
+      <a class="nav-title-link" href="lettyuy.github.io">
         <!-- TODO - Change the "Portfolio Title" to whatever you want displayed in the top left -->
-        <span class="nav-title">letty uy / portfolio</span>
+        <span class="nav-title">Letty Uy's Portfolio</span>
          <!-- TODO - Change the email after 'mailto:' to your email address for contact -->
         <a class="button" href="mailto:manilette.uy@baruchmail.cuny.edu">
           <span class="button-text">Contact Me</span>
@@ -54,7 +50,7 @@
             - Change the number to point to your Unemployable & replace the OpenSea link with your own
             - If you aren't using an Unemployable as your image, remove the entire "a" element
           -->
-          <img src="./assets/images/lettypx.png" class="portfolio-header-image">
+          <img src="./assets/images/letty_pixel.png" class="portfolio-header-image">
           <a class="no-underline" target="_blank">
           </a>
         </div>
@@ -69,7 +65,7 @@
         <div id="portfolio-header-text-container">
             <div class="header-text">
               <span class="main-title">Hey, I'm Letty.</span>
-              <div class="body-text">I'm a data analyst based in NYC. </div>
+              <div class="body-text">I'm a consultant/data analyst/wearer-of-many-hats based in NYC.</div>
             </div>
             <a class="button" id="my-work-link">
               <span class="button-text">Check out my projects</span> 
@@ -88,18 +84,19 @@
       <div id="about-section">
         <span class="subheader-text">My Background / About Me</span>
         <div class="about-section-content">
-          <div class="body-text">I am a soon-to-be master's graduate in Business Analytics from CUNY Baruch College, with a fashion industry background.</div>
-          <div class="body-text">My experience includes graduate-level internships at <a href = "https://www.firstandfirstconsulting.com/core-offerings", style="color: blueviolet;">First & First Consulting</a> and <a href = "https://www.lhw.com/", style="color: blueviolet;">The Leading Hotels of the World</a>, where I honed my skills in Python, R, Excel, and statistical analysis techniques. I also placed in the Top 20 in the 2022 <a href = "https://adobeanalyticschallenge.com/", style="color: blueviolet;">Adobe Analytics Challenge</a>. This journey has shaped my passion for analytics and data storytelling.</div>
-          <div class="body-text">With my graduation on the horizon (Dec 2023!), I am excited about transitioning to a full-time data analyst role. I am interested in joining a company where I can apply my skills and curiosity, and contribute to data-driven decision making. I’m open to conversations surrounding data, design, and the intersection of both, so feel free to reach out!
-          </div>
+          <div class="body-text">I began my career studying apparel and graphic design, where I learned to think visually, build with intention, and design around the end user. I went on to spend over six years in fashion design and product development, bringing concepts to life and working across the full lifecycle from ideation to launch.</div>
+<div class="body-text">During that time, I became increasingly curious about the data behind product decisions — especially the voice of the customer. I found myself drawn to social listening, customer reviews, and trend signals: What were customers actually saying? What patterns were emerging beneath the surface? How could we use those insights to build better products?</div>
+<div class="body-text">That curiosity led me to pursue a master’s degree in Business Analytics and transition into consulting. Today, I work with a Fortune 1 client focusing on trend intelligence, analyzing large-scale data to surface emerging themes, consumer sentiment, and strategic opportunities.</div>
+<div class="body-text">What I enjoy most is ideating solutions — whether that’s shaping product concepts, building insight tools, or refining systems that make decisions easier and more informed. I’m motivated by solving real problems, improving user experiences, and creating work that is both functional and well-designed.</div>
+<div class="body-text">My background allows me to bridge creativity and analytics: I bring a designer’s empathy, a product developer’s execution mindset, and a data-driven approach to iteration and strategy.
+</div> 
         </div>
-      </div>
       </div>
 
       <!-- PROJECTS / MY WORK SECTION -->
       <div id="my-work-section">
         <!-- TODO - Change the subheader-text to whatever you want the Projects section header to say -->
-        <span class="subheader-text">My Work / My Projects</span>
+        <span class="subheader-text">My Projects</span>
 
         <div class="projects-container">
           <!-- 
@@ -125,41 +122,16 @@
                 - PROJECT_PAGE_NAME.html: the html filename for the project (must be in project-pages folder)
           -->
           <div class="project-card">
-            <img src="./assets/images/hotelsql.png" class="project-image">
-            <div class="project-card-text-container">
-              <div class="subheader-text project-title">Hotel Booking Demand</div>
-              <div class="body-text project-card-text">Using SQL, I created a dashboard investigating the causes for room cancellations.</div>
-            </div>
-            <a class="button" href="./project-pages/hotelsql.html">
-              <span class="button-text">SQL</span>
-              <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon"/>
-            </a>
-          </div>
-
-          <div class="project-card">
-            <img src="./assets/images/meteoritemap.png" class="project-image">
-            <div class="project-card-text-container">
-              <div class="subheader-text project-title">Impact From Above</div>
-              <div class="body-text project-card-text">Using Tableau and Mapbox, I created a data visualization that shows recorded meteorite impacts all over the world.</div>
-            </div>
-            <a class="button" href="https://public.tableau.com/app/profile/letty.uy/viz/ImpactFromAbove/ImpactFromAbove">
-              <span class="button-text">Tableau</span>
-              <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon"/>
-            </a>
-          </div>
-
-          <div class="project-card">
             <img src="./assets/images/wearable.jpg" class="project-image">
             <div class="project-card-text-container">
               <div class="subheader-text project-title">Bellabeat Case Study</div>
               <div class="body-text project-card-text">Using R, I completed a case study as part of my Google Data Analytics Certificate.</div>
             </div>
-            <a class="button" href="./project-pages/Uy_Letty_CIS_9655_Presentation_2_Heatmap.html">
-              <span class="button-text">R</span>
+            <a class="button" href="./project-pages/bellabeat_analysis.html">
+              <span class="button-text">Read More</span>
               <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon"/>
             </a>
-        </div>
-
+          </div>
           <div class="project-card">
             <img src="./assets/images/school_map.png" class="project-image">
             <div class="project-card-text-container">
@@ -167,11 +139,10 @@
               <div class="body-text project-card-text">Using R, I created a slider map to show average schooling years by country and year.</div>
             </div>
             <a class="button" href="./project-pages/school_map.html">
-              <span class="button-text">R</span>
+              <span class="button-text">Read More</span>
               <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon"/>
             </a>
           </div>
-
           <div class="project-card">
             <img src="./assets/images/billboard_h100.png" class="project-image">
             <div class="project-card-text-container">
@@ -179,21 +150,10 @@
               <div class="body-text project-card-text">Using Python, I made a quadrant scatter plot that visualized and categorized Billboard's Hot 100 #1 songs.</div>
             </div>
             <a class="button" href="./project-pages/cis_9655_billboard_quadrant_v03.html">
-              <span class="button-text">Python</span>
+              <span class="button-text">Read More</span>
               <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon"/>
             </a>
           </div>
-
-          <div class="project-card">
-            <img src="./assets/images/book_formats_heatmap.png" class="project-image">
-            <div class="project-card-text-container">
-              <div class="subheader-text project-title">Book Format Heatmap</div>
-              <div class="body-text project-card-text">Using Python and Altair, I made an interactive heatmap that visualized award-winning books and their formats.</div>
-            </div>
-            <a class="button" href="./project-pages/Uy_Letty_CIS_9655_Presentation_2_Heatmap.html">
-              <span class="button-text">Python</span>
-              <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon"/>
-            </a>
         </div>
       </div>
     </div>
@@ -216,27 +176,10 @@
       
         This should be the same across all pages.
       -->
-      <a class="icon-link" href="mailto:manilette.uy@baruchmail.cuny.edu">
+      <a class="icon-link" href="mailto:lettefuy@gmail.com">
         <image src="./assets/icons/mail.svg" class="footer-icon"/>
       </a>
     </div>
-
-    <!-- StatCounter Code -->
-
-    <!-- Default Statcounter code for Letty's Data Analytics Portfolio
-https://lettyuy.github.io/ -->
-<script type="text/javascript">
-  var sc_project=12947186; 
-  var sc_invisible=1; 
-  var sc_security="1dcca813"; 
-  </script>
-  <script type="text/javascript"
-  src="https://www.statcounter.com/counter/counter.js" async></script>
-  <noscript><div class="statcounter"><a title="Web Analytics"
-  href="https://statcounter.com/" target="_blank"><img class="statcounter"
-  src="https://c.statcounter.com/12947186/0/1dcca813/1/" alt="Web Analytics"
-  referrerPolicy="no-referrer-when-downgrade"></a></div></noscript>
-  <!-- End of Statcounter Code -->
 
 	</body>
 </html>
