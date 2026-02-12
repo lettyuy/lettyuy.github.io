@@ -1,32 +1,42 @@
 /* ---------- GLOBAL ---------- */
+* { box-sizing: border-box; }
 
-* {
-  box-sizing: border-box;
-}
+html { text-size-adjust: 100%; }
 
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
     Roboto, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
-  background-color: #ffffff;
+  background: #ffffff;
   color: #111111;
 }
 
-/* ---------- NAVBAR ---------- */
+/* Make sure basic text isn't super airy (tighten) */
+p {
+  margin: 0;                 /* remove default big paragraph margins */
+  line-height: 1.5;          /* tighter text */
+}
 
+/* If your typography.css sets these, this will still work unless it uses !important */
+.body-text {
+  line-height: 1.5;
+}
+
+/* ---------- NAVBAR ---------- */
 .navbar {
   width: 100%;
   position: fixed;
   top: 0;
   background: #ffffff;
   border-bottom: 1px solid #f0f0f0;
+  z-index: 10;
 }
 
 .nav-container {
   max-width: 1100px;
   margin: 0 auto;
-  padding: 24px;
+  padding: 18px 24px;        /* slightly tighter */
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -39,18 +49,16 @@ body {
 }
 
 /* ---------- MAIN CONTENT ---------- */
-
 #main-content {
   max-width: 900px;
-  margin: 0 auto 100px auto;
-  padding: 110px 24px 0 24px;
+  margin: 0 auto 80px auto;
+  padding: 90px 24px 0 24px; /* pulls content up */
   display: flex;
   flex-direction: column;
-  gap: 80px;   /* reduced */
+  gap: 56px;                 /* tighter section spacing */
 }
 
 /* ---------- HERO ---------- */
-
 #hero-section {
   display: flex;
   flex-direction: column;
@@ -59,46 +67,39 @@ body {
 .hero-text {
   display: flex;
   flex-direction: column;
-  gap: 20px;   /* tighter */
+  gap: 14px;                 /* tighter hero rhythm */
 }
 
+/* If typography.css is taking over, these still give you structure */
 .main-title {
-  font-size: 44px;   /* was 48 */
+  margin: 0;
+  line-height: 1.1;          /* tighter headline */
 }
 
 .hero-subtext {
-  font-size: 18px;
-  line-height: 1.6;
-  max-width: 600px;
+  max-width: 680px;
+  line-height: 1.5;
+  margin-top: 2px;
 }
 
 /* ---------- ABOUT ---------- */
-
 #about-section {
   display: flex;
   flex-direction: column;
-  gap: 18px;   /* tighter heading spacing */
+  gap: 14px;                 /* tighter heading spacing */
 }
 
 .about-content {
   display: flex;
   flex-direction: column;
-  gap: 16px;   /* tighter paragraph spacing */
-}
-
-
-.about-content {
-  display: flex;
-  flex-direction: column;
-  gap: 0px;
-  max-width: 750px;
+  gap: 14px;                 /* tighter paragraph spacing */
+  max-width: 760px;
 }
 
 /* ---------- FOOTER ---------- */
-
 .footer {
   border-top: 1px solid #f0f0f0;
-  padding: 40px 24px;
+  padding: 32px 24px;
 }
 
 .footer-content {
@@ -112,15 +113,14 @@ body {
 }
 
 /* ---------- RESPONSIVE ---------- */
-
 @media (max-width: 768px) {
-  .main-title {
-    font-size: 36px;
+  #main-content {
+    padding: 80px 18px 0 18px;
+    gap: 44px;
   }
 
-  #main-content {
-    margin: 140px auto 100px auto;
-    gap: 80px;
+  .nav-container {
+    padding: 16px 18px;
   }
 }
 
