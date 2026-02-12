@@ -1,45 +1,39 @@
-/* ---------- FONT ---------- */
-
-body, h1, h2, p {
-  font-family: 'Space Mono', monospace;
-}
-
 /* ---------- NAV ---------- */
 
 .nav-title {
   font-weight: 700;
-  font-size: 18px;
+  font-size: 1rem; /* 16px */
 }
 
 /* ---------- BUTTON ---------- */
 
 .button-text {
-  font-size: 12px;
+  font-size: 0.875rem; /* 14px */
   font-weight: 700;
 }
 
 /* ---------- HERO ---------- */
 
 .main-title {
-  font-size: 32px;
+  font-size: clamp(2.2rem, 4vw, 3rem);
   font-weight: 700;
-  line-height: 1.15;      /* tighter headline */
+  line-height: 1.1;
   letter-spacing: -0.5px;
 }
 
 /* ---------- SECTION HEADINGS ---------- */
 
 .subheader-text {
-  font-size: 14px;
+  font-size: clamp(1.1rem, 1.8vw, 1.4rem);
   font-weight: 700;
-  margin-bottom: 6px;     /* tighter gap under headings */
+  margin-bottom: 12px;
 }
 
 /* ---------- BODY TEXT ---------- */
 
 .body-text {
-  font-size: 13.5px;
+  font-size: 1rem; /* 16px */
   font-weight: 500;
-  line-height: 1.45;      /* this is the key tightening */
-  max-width: 900px;
+  line-height: 1.65;
+  max-width: 75ch; /* cleaner reading width */
 }
