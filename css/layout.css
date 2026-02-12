@@ -29,7 +29,7 @@ body {
 }
 
 .nav-container {
-  max-width: 1100px;
+  max-width: 800px;
   margin: 0 auto;
   padding: 18px 24px;
   display: flex;
@@ -45,7 +45,7 @@ body {
 
 /* ---------- MAIN CONTENT ---------- */
 #main-content {
-  max-width: 1100px;            /* wider for modern screens */
+  max-width: 800px;            /* wider for modern screens */
   margin: 0 auto 90px auto;
   padding: 96px 24px 0 24px;    /* accounts for fixed navbar */
   display: flex;
@@ -57,10 +57,7 @@ body {
 .circle-ai-content,
 .about-content,
 .hero-subtext {
-  max-width: 800px;
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
+  max-width: 100%;
 }
 
 /* ---------- HERO ---------- */
@@ -132,7 +129,7 @@ body {
 }
 
 .footer-content {
-  max-width: 1100px;
+  max-width: 800px;
   margin: 0 auto;
 }
 
@@ -156,7 +153,7 @@ body {
 /* n8n workflow / wide diagrams */
 .n8n-image {
   width: 100%;
-  max-width: 900px;            /* wider for diagrams */
+  max-width: 800px;            /* wider for diagrams */
   height: auto;
   border-radius: 18px;
   box-shadow: 0 18px 50px rgba(0,0,0,0.12);
