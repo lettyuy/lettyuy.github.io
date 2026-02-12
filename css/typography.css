@@ -1,49 +1,50 @@
-body, h1, p {
+/* ---------- FONT ---------- */
+
+body, h1, h2, p {
   font-family: 'Space Mono', monospace;
 }
+
+/* Remove default browser spacing */
+h1, h2, p {
+  margin: 0;
+}
+
+/* ---------- NAV ---------- */
 
 .nav-title {
   font-weight: 700;
   font-size: 18px;
 }
 
+/* ---------- BUTTON ---------- */
+
 .button-text {
   font-size: 12px;
   font-weight: 700;
 }
 
-.image-caption {
-  font-size: 14px;
-  font-weight: 500;
-}
+/* ---------- HERO ---------- */
 
 .main-title {
   font-size: 32px;
   font-weight: 700;
+  line-height: 1.15;      /* tighter headline */
+  letter-spacing: -0.5px;
 }
+
+/* ---------- SECTION HEADINGS ---------- */
 
 .subheader-text {
   font-size: 14px;
   font-weight: 700;
+  margin-bottom: 6px;     /* tighter gap under headings */
 }
+
+/* ---------- BODY TEXT ---------- */
 
 .body-text {
   font-size: 13.5px;
   font-weight: 500;
-}
-
-.project-card-text {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  display: -webkit-box;
-  -webkit-line-clamp: 4;
-  -webkit-box-orient: vertical;
-}
-
-.project-title {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  display: -webkit-box;
-  -webkit-line-clamp: 1;
-  -webkit-box-orient: vertical;
+  line-height: 1.45;      /* this is the key tightening */
+  max-width: 720px;
 }
