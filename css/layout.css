@@ -15,26 +15,19 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-
-
-
 /* Main Page Layout */
-
 #main-content {
-  margin: 225px 425px;
+  display: flex;
   flex-direction: column;
   gap: 69px;
+  margin: 225px 425px;
 }
 
-
-
-
 /* Portfolio Header */
-
 #portfolio-header {
   display: flex;
   gap: 20px;
-  align-items: left;
+  align-items: flex-start;
 }
 
 #portfolio-header-image-container {
@@ -42,25 +35,27 @@ body {
   flex-direction: column;
   gap: 10px;
   flex-basis: 50%;
+  min-width: 0;
 }
 
 .portfolio-header-image {
   width: 100%;
   height: auto;
+  display: block;
 }
 
 #portfolio-header-text-container {
   display: flex;
   gap: 34px;
-  flex-direction: column; /* Stack children vertically */
-  justify-content: left; /* Center children vertically */
-  align-items: left; /* Center children horizontally */
-  text-align: left; /* Ensure text within children is centered */
-  height: 100%; /* Full height of the container (adjust as needed) */
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  text-align: left;
+  flex-basis: 50%;
+  min-width: 0;
 }
 
 /* About Section */
-
 #about-section {
   display: flex;
   flex-direction: column;
@@ -74,11 +69,7 @@ body {
   gap: 16px;
 }
 
-
-
-
 /* Project Section */
-
 #my-work-section {
   display: flex;
   flex-direction: column;
@@ -92,33 +83,29 @@ body {
   flex-wrap: wrap;
 }
 
-    /* Project Cards */
+/* Project Cards */
+.project-card {
+  max-width: calc((100% - 32px) / 2);
+  display: flex;
+  flex-direction: column;
+  gap: 34px;
+}
 
-    .project-card {
-      max-width: calc((100% - 32px) / 2);
-      display: flex;
-      flex-direction: column;
-      gap: 34px;
-    }
+.project-card-text-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
 
-    .project-card-text-container {
-      flex-direction: column;
-      display: flex;
-      gap: 16px
-    }
-
-    .project-image {
-      width: 100%;
-      height: 200px;
-      object-fit: cover;
-      object-position: center;
-    }
-
-
-
+.project-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
 
 /* Project Pages */
-
 #project-header {
   display: flex;
   flex-direction: column;
@@ -128,6 +115,7 @@ body {
 .project-header-image {
   width: 100%;
   height: auto;
+  display: block;
 }
 
 #project-details {
@@ -142,59 +130,55 @@ body {
   gap: 34px;
 }
 
-    /* Project Gallery */
+/* Project Gallery */
+#project-gallery {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
 
-    #project-gallery {
-      display: flex;
-      flex-direction: column;
-      gap: 16px;
-    }
+.project-gallery-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 34px 16px;
+}
 
-    .project-gallery-content {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 34px 16px;
-    }
+.gallery-image-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
 
-    .gallery-image-container {
-      width: 100%;
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
-    }
+.gallery-image-container.half-width {
+  width: calc((100% - 16px) / 2);
+}
 
-    .gallery-image-container.half-width {
-      width: calc((100% - 16px) / 2);
-    }
+.gallery-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
 
-    .gallery-image {
-      width: 100%;
-      height: auto;
-    }
-
-
-/* Extra Extra large devices (large laptops and desktops, 1200px and below) */
+/* Responsive */
 @media only screen and (max-width: 1600px) {
   #main-content {
     margin: 225px 275px;
   }
 }
 
-/* Extra large devices (large laptops and desktops, 1200px and below) */
 @media only screen and (max-width: 1200px) {
   #main-content {
     margin: 225px 175px;
   }
 }
 
-/* Large devices (laptops/desktops, 1000px and below) */
 @media only screen and (max-width: 1000px) {
   #main-content {
     margin: 225px 75px;
   }
 }
 
-/* Small devices (portrait tablets and large phones, 800px and below) */
 @media only screen and (max-width: 800px) {
   #main-content {
     margin: 150px 50px;
@@ -209,7 +193,6 @@ body {
   }
 }
 
-/* Small devices (portrait tablets and large phones, 600px and below) */
 @media only screen and (max-width: 600px) {
   #main-content {
     margin: 125px 20px;
@@ -219,6 +202,4 @@ body {
     max-width: 100%;
   }
 }
-
-
 
