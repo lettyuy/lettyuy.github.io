@@ -109,7 +109,7 @@ p {
 }
 
 .cta-small{
-  font-size:7px;
+  font-size:8px;
   padding:2px 5px;
   border-radius:999px;
   border:2px solid #111;
@@ -145,7 +145,7 @@ p {
 
 .circle-ai-image {
   width: 100%;
-  max-width: 600px;
+  max-width: 420px;
   border-radius: 14px;
   box-shadow: 0 10px 30px rgba(0,0,0,0.08);
   display: block;
