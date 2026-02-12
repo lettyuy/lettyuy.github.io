@@ -18,12 +18,6 @@ p {
   line-height: 1.5;          /* tighter text */
 }
 
-/* If your typography.css sets these, this will still work unless it uses !important */
-.body-text{
-  line-height: 1.7;
-  margin-bottom: 18px;
-}
-
 /* ---------- NAVBAR ---------- */
 .navbar {
   width: 100%;
