@@ -13,6 +13,17 @@
 
   <body>
 
+    <!-- NAVBAR -->
+    <nav class="navbar">
+      <div class="nav-container">
+        <a class="nav-title" href="#">Letty Uy</a>
+
+        <a class="button" href="mailto:lettefuy@gmail.com">
+          <span class="button-text">Contact Me</span>
+        </a>
+      </div>
+    </nav>
+
     <!-- MAIN CONTENT -->
     <main id="main-content">
 
@@ -22,10 +33,84 @@
           <h1 class="main-title">Hey, I’m Letty.</h1>
 
           <p class="body-text hero-subtext">
-            I’m a consultant, data analyst, and wearer-of-many-hats based in NYC.
+            I’m a consultant, data analyst, and product-minded problem solver
+            based in NYC.
           </p>
-          
         </div>
+      </section>
+
+      <!-- CIRCLE AI SELLER RECS -->
+      <section id="circle-ai-section">
+
+        <h2 class="subheader-text">Circle AI Seller Recs</h2>
+
+        <div class="circle-ai-content">
+
+          <p class="body-text">
+            Circle AI Seller Recs is a conversational decision-support prototype designed to help small retailers discover and operationalize trending product ideas. It intelligently shifts between trend-driven recommendations and practical business guidance, demonstrating how AI can function as a modular decision layer rather than a static chatbot.
+          </p>
+
+          <p class="body-text">
+            In this view, recommendations are drawn exclusively from a predefined trend dataset, preventing hallucinated or irrelevant suggestions. The assistant adheres to structured output rules, ensuring each card includes summary, relevance, and execution steps.
+          </p>
+
+          <!-- Screenshot 1 -->
+          <img src="./assets/images/seller-recs-1.png" 
+               alt="Trend recommendation mode"
+               class="circle-ai-image" />
+
+          <p class="body-text">
+            When the user asks an operational question (e.g., ingredients for a specific drink), the assistant switches into advisory mode and suppresses visual cards entirely. The response remains conversational and practical. This dual-mode behavior reflects thoughtful UX design: the interface avoids unnecessary visual clutter when ideation is not required.
+          </p>
+
+          <!-- Screenshot 2 -->
+          <img src="./assets/images/seller-recs-2.png" 
+               alt="Advisory mode without cards"
+               class="circle-ai-image" />
+
+          <p class="body-text">
+            Here, the assistant moves beyond beverages and into complementary revenue opportunities, recommending pastry pairings that enhance both flavor and presentation. The card structure ensures suggestions remain consistent, actionable, and visually scannable.
+          </p>
+
+          <!-- Screenshot 3 -->
+          <img src="./assets/images/seller-recs-3.png" 
+               alt="Cross-category recommendations"
+               class="circle-ai-image" />
+
+          <p class="body-text">
+            When the user asks for seasonal guidance, the system shifts into ideation mode, generating structured trend cards instead of a simple text response. Each card contains a summary, relevance context, and actionable next steps, transforming abstract trends into operational menu experiments.
+          </p>
+
+          <!-- Screenshot 4 -->
+          <img src="./assets/images/seller-recs-4.png" 
+               alt="Seasonal ideation cards"
+               class="circle-ai-image" />
+
+          <h3 class="subheader-text">Potential Applications</h3>
+
+          <p class="body-text">
+            In a production environment, this system could integrate real-time social listening signals by surfacing emerging flavors, aesthetic movements, seasonal conversations, and local neighborhood buzz, and merge them with internal sales data.
+          </p>
+
+          <p class="body-text">
+            By combining trend velocity, review sentiment, weather patterns, and event data, the assistant could recommend menu shifts and limited-time offerings aligned with what customers are actively responding to in the moment.
+          </p>
+
+          <p class="body-text">
+            Rather than reacting to trends after they peak, sellers could proactively test, bundle, and promote items informed by live cultural signals and performance metrics. Over time, this evolves into an adaptive intelligence layer — helping small retailers translate social insight into operational action, from menu development to inventory planning and on-the-go decision-making.
+          </p>
+
+          <a href="https://lettyuy.app.n8n.cloud/webhook/seller-recs"
+             target="_blank"
+             rel="noreferrer"
+             class="button">
+
+            <span class="button-text">Try the demo →</span>
+
+          </a>
+
+        </div>
+
       </section>
 
       <!-- ABOUT SECTION -->
@@ -33,36 +118,26 @@
         <h2 class="subheader-text">My Background</h2>
 
         <div class="about-content">
-
           <p class="body-text">
-            I began my career studying apparel and graphic design, where I learned
-            to think visually, build with intention, and design around the end user.
-            I spent over six years in fashion design and product development,
-            bringing concepts to life from ideation to launch.
+            I began my career studying apparel and graphic design, bringing ideas to life through product development before transitioning into analytics and consulting.
           </p>
 
           <p class="body-text">
-            Over time, I became increasingly curious about the data behind product
-            decisions — especially the voice of the customer. I found myself drawn
-            to social listening, pattern recognition, and the signals beneath the surface.
+            Today, I focus on trend intelligence, workflow automation, and building systems that translate cultural insight into structured, operational outputs.
           </p>
-
-          <p class="body-text">
-            That curiosity led me to pursue a master’s degree in Business Analytics
-            and transition into consulting. Today, I work with a Fortune 1 client
-            focusing on trend intelligence and insight-driven strategy.
-          </p>
-
-          <p class="body-text">
-            I enjoy building tools, refining systems, and designing workflows that
-            make decision-making clearer and more effective — blending creative thinking
-            with analytical rigor.
-          </p>
-
         </div>
       </section>
 
     </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="footer-content">
+        <a href="mailto:lettefuy@gmail.com" class="footer-link">
+          lettefuy@gmail.com
+        </a>
+      </div>
+    </footer>
 
   </body>
 </html>
