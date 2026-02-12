@@ -4,11 +4,6 @@ body, h1, h2, p {
   font-family: 'Space Mono', monospace;
 }
 
-/* Remove default browser spacing */
-h1, h2, p {
-  margin: 0;
-}
-
 /* ---------- NAV ---------- */
 
 .nav-title {
